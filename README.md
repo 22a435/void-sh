@@ -1,7 +1,7 @@
 # void-sh
 
 ## Init
-This script will install `pd` and `cometbft`, run `pd network join`, configure services, and begin syncing from mainnet genesis.
+This script will install `pd` and `cometbft`, run `pd network join`, configure services, download a polkachu snapshot, and sync from there.
 
 If a DNS record points to the host, it will also automatically enable the HTTPS secured GRPC instance and minifront frontend.
 
