@@ -8,7 +8,7 @@ IP="${IP%\"}"
 IP="${IP#\"}"
 DNS=$(dig @1.1.1.1 -x $IP +short)
 
-curl --proto '=https' --tlsv1.2 -LsSf https://github.com/penumbra-zone/penumbra/releases/download/v1.0.2/pd-installer.sh | sh
+curl --proto '=https' --tlsv1.2 -LsSf https://github.com/penumbra-zone/penumbra/releases/download/v1.5.1/pd-installer.sh | sh
 sudo cp $HOME/.cargo/bin/pd /usr/local/bin/pd
 
 $HOME/.cargo/bin/pd network join --moniker $MONIKER --external-address $IP:26656 $COMETRPC
